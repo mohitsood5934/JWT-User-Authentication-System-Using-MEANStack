@@ -135,6 +135,7 @@ function verifyToken(req,res,next)
 
 }
 ```
+-- Route guards are implemented in the routes in angular to protectthe route on client side.
 --  This was most of the things related to JWT 
    If you want to understand in depth ,then visit [JWT OFFICIAL SITE](https://jwt.io/introduction/)
             
