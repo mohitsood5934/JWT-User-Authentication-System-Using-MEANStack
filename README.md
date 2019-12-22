@@ -64,7 +64,7 @@ Very Popular nowadays is JWT Authentication.It is the one in which a token is ge
 })
 ```
 
---  JWT Token genrattion has 3 steps -
+--  JWT Token generation has 3 steps -
   -- Header 
      ```
      {
@@ -136,6 +136,12 @@ function verifyToken(req,res,next)
 }
 ```
 -- Route guards are implemented in the routes in angular to protectthe route on client side.
+
+-- Now I am telling you something very interesting :
+ 
+   I have used  @auth0/angular-jwt npm library in my client side .This library will provides us the HTTP Interceptor which will attach   JWT Token to our every HTTP Client requests.Keep in mind that currently this library did not have functionality for implementing JWT Authentication.Here whenever we  will make a request in client side we will include the token that we are getting by using @auth0/angular-jwt library and store it in a local storage.
+
+
 --  This was most of the things related to JWT 
    If you want to understand in depth ,then visit [JWT OFFICIAL SITE](https://jwt.io/introduction/)
             
