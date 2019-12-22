@@ -1,9 +1,9 @@
 # JWT-User-Authentication-System-Using-MEANStack
 In this project I have implemented JWT Authentication using MEAN
 
---When I was in my college,then I always used to think about how do I implement JWT using all the technologies together,but in google or most of the blogs I did not get much references because in most of the places they are just generating a token and using POSTMAN for sending the request and for a someone who is new to the Node.js it will take very much time to make a complete application.So I decided to implement JWT Authentication using MEAN Stack.
+-- When I was in my college,then I always used to think about how do I implement JWT using all the technologies together,but in google or most of the blogs I did not get much references because in most of the places they are just generating a token and using POSTMAN for sending the request and for a someone who is new to the Node.js it will take very much time to make a complete application.So I decided to implement JWT Authentication using MEAN Stack.
 
---I have used Material design for front end which is Angular's UI Component Library. 
+-- I have used Material design for front end which is Angular's UI Component Library. 
 
 **There are two methods of authentication which I have known so far**
 
@@ -72,11 +72,11 @@ Very Popular nowadays is JWT Authentication.It is the one in which a token is ge
      "typ":JWT
      }
      ```
-  -- Payload Data
+  --  Payload Data
      
   Payload means user information like email id and _id(primary key)
   
-  --And finally we have to sign using payload,secret and our 256 bit token will be generated
+  --  And finally we have to sign using payload,secret and our 256 bit token will be generated
   
   
     ```I/P  RSA256 OR HS256(base64urlencoded(header))+base64urlencoded(payload)+secret
@@ -87,7 +87,7 @@ Very Popular nowadays is JWT Authentication.It is the one in which a token is ge
  --  Token can be sent to user as a response,in header or in cookie.Sending back as a response is good practice.
  
  
--- Consider we have a protected route and we want to access it ,then we need to verify the token first like this
+--   Consider we have a protected route and we want to access it ,then we need to verify the token first like this
 
 ```router.get('/protectedRoute',verifyToken,function(req,res){
     var decoded = jwt_decode(req.token);
@@ -108,7 +108,7 @@ Very Popular nowadays is JWT Authentication.It is the one in which a token is ge
 });
 ```
 
---Verify token is a middleware function which will give jwt by extracting it from the Authorization Header
+--  Verify token is a middleware function which will give jwt by extracting it from the Authorization Header
 
 ```
 //format of token
@@ -135,8 +135,8 @@ function verifyToken(req,res,next)
 
 }
 ```
---This was most of the things related to JWT 
- If you want to understand in depth ,then visit [JWT OFFICIAL SITE](https://jwt.io/introduction/)
+--  This was most of the things related to JWT 
+   If you want to understand in depth ,then visit [JWT OFFICIAL SITE](https://jwt.io/introduction/)
             
             
             
