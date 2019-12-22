@@ -79,7 +79,7 @@ Very Popular nowadays is JWT Authentication.It is the one in which a token is ge
   --And finally we have to sign using payload,secret and our 256 bit token will be generated
   
   
- --  ```I/P  RSA256 OR HS256(base64urlencoded(header))+base64urlencoded(payload)+secret
+    ```I/P  RSA256 OR HS256(base64urlencoded(header))+base64urlencoded(payload)+secret
      
      O/P   -- JWT TOKEN xxxxxx.yyyyyy.zzzzzz made of header,payload and sign and is less than 200 bytes
            -- Token  can be stored in client side local storage
