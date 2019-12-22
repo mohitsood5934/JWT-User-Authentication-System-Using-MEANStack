@@ -1,0 +1,29 @@
+
+<br>
+<button type="button" class=" btn btn-md btn-primary"  (click)="getUsers()" style="width:50% ; height:50px;margin-left: 280px;" >Get Users</button>
+<br>
+<br>
+<div *ngIf="show">
+    <table class="table table-striped">
+        <thead>
+             <th>Serial Number</th>
+             <th>_Id</th>
+             <th>Email</th>
+            
+        
+        </thead>
+             <tbody>
+             <tr *ngFor="let user of users;let i=index ">
+             <td>{{i}}</td>
+             <td>{{user._id}}</td>
+             <td>{{user.email}}</td>
+             
+             
+             </tr>
+             </tbody>
+          
+        
+     </table>
+ 
+ </div>
+ 

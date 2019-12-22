@@ -1,0 +1,19 @@
+
+  <mat-toolbar color ="accent">
+    <mat-toolbar-row>
+      <button mat-icon-button>
+       
+      </button>
+      <h1>JWT </h1>
+      <span class="menu-spacer"></span>
+      <div>
+           <a  mat-button  [routerLink]="'/users'" routerLinkActive="active" *ngIf="auth.loggedIn">Get Users</a>
+           <a  mat-button  [routerLink]="'/login'" routerLinkActive="active" *ngIf="!auth.loggedIn">Login</a>
+           <a  mat-button  [routerLink]="'/signup'" routerLinkActive="active" *ngIf="!auth.loggedIn">Signup</a>
+           <a  mat-button  (click)="logout()" href="#" *ngIf="auth.loggedIn">Logout</a>
+        </div>
+</mat-toolbar-row>
+
+</mat-toolbar>
+
+<router-outlet></router-outlet>
