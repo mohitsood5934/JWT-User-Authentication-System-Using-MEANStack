@@ -144,6 +144,11 @@ function verifyToken(req,res,next)
 
 --  This was most of the things related to JWT 
    If you want to understand in depth ,then visit [JWT OFFICIAL SITE](https://jwt.io/introduction/)
+   
+   
+   Thanks 
+   
+   Mohit Sood
             
             
             
