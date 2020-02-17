@@ -1,7 +1,7 @@
 # JWT-User-Authentication-System-Using-MEANStack
 In this project I have implemented JWT Authentication using MEAN
 
--- When I was in my college,then I always used to think about how do I implement JWT using all the technologies together,but in google or most of the blogs I did not get much references because in most of the places they are just generating a token and using POSTMAN for sending the request and for a someone who is new to the Node.js it will take very much time to make a complete application.So I decided to implement JWT Authentication using MEAN Stack.
+
 
 -- I have used Material design for front end which is Angular's UI Component Library. 
 
